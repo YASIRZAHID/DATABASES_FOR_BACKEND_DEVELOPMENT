@@ -115,29 +115,104 @@ DCL Data Control Language
 
 ## Data Definition Language
 Helps you define data in your database
+
 Command to create tables
-    Create
+> Create
+    
 Command to alter tables
-    Alter
+> Alter
+    
 Command to remove existing column/object
-    Drop
+> Drop
 
 ## Data Manipulation Language
 Helps you manipulate data most CRUD operations are done here
 Command to insert data to a field
-    Insert
+> Insert
+
 Command to update existing data 
-    Update
+> Update
+
 Command to delete existing data
-    Delete
+> Delete
+
 ## Data Query Language
 Used to read and retrieve data
 Command to get preffered data row/column
-    Select
+> Select
 
 ## Data Control Language
 To control who can access database
 Command to give access 
-    Grant
+> Grant
+
 Command to block access
-    Revoke
+> Revoke
+
+# Advantages of SQL
+User-Friendly Little coding skills required
+Standard Language 
+Portable Language 
+Comprehensive language (CRUD , Access control , Manage DB security)
+Allows Data Processing
+
+# Introduction to syntax
+## STEP 1 Using Data Definition Language to create table
+Syntax to create a database
+
+```CREATE DATABASE database_name;```
+
+Syntax to create a table
+
+```CREATE TABLE table_name;```
+
+Syntax to drop a table
+
+```DROP TABLE table_name;``` 
+
+Syntax to add a column into a table:
+
+```ALTER TABLE table_name ADD (column_name datatype(size)); ```
+
+Syntax to add a primary key to a table:
+
+```ALTER TABLE table_name ADD primary key (column_name);```
+
+Syntax to truncate a table (remove all records from table)
+
+TRUNCATE TABLE table_name;
+
+## STEP 2 Using Data Manipulation Language to populate tables
+Syntax to add data to a table with three columns named c1 c2 c3
+here values are what you want data to be in each column
+
+``` 
+INSERT INTO table_name
+(c1,c2,c3) 
+VALUES (value_1,value_2,value_3) 
+```
+
+Syntax to update data in a table  (suppose value in column c2 is wrong c1 hold identifier)
+
+```
+UPDATE table_name
+SET c2 = 
+'new_value'
+WHERE c1 = primary_key;  // or identifier you have to filter out
+```
+
+Syntax to delete data from a table
+
+```
+DELETE FROM table_name
+WHERE c1= primary_key;
+```
+
+## STEP 3 Using Data Query LAnguage to read/retrive data
+Syntax to Query data within a table
+
+```
+SELECT c2,c3,
+FROM table_name
+WHERE c1 = primary_key ;
+```
