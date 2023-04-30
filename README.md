@@ -216,3 +216,26 @@ SELECT c2,c3,
 FROM table_name
 WHERE c1 = primary_key ;
 ```
+## ITEM NAVIGATION
+in essence 
+TABLE = Entity = Object = Relation(only in relative)
+COLUMN = Fields = Attributes
+ROWS = records = tuple
+DOMAINS = set of legal values that can be assigned to a database
+each Relation posseses its own Schema(structure including the name of relation its attributes their names and datatypes)
+Composite Primary Key is where two or more fields together make a record unique
+Every relation in database abides by three constraints
+Key Constraints (Unique / Not Null )
+Domain Constraints
+Refrential Integrity Constraints (Referenced Primary/Foreign key columns must exist)
+
+
+
+### DATATYPES
+Might vary depending on the Database
+few common are Strings - Numeric - Date and Time - Binary
+Numeric - **INT,TINYINT,BIGINT,FLOAT,REAL**
+Date and TIME - **DATE,TIME,DATETIME**
+Char and String - **CHAR,VARCHAR**
+
+
