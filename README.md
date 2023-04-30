@@ -219,7 +219,8 @@ WHERE c1 = primary_key ;
 ## ITEM NAVIGATION
 in essence 
 TABLE = Entity = Object = Relation(only in relative)
-COLUMN = Fields = Attributes
+COLUMN = Fields = Attributes 
+unique ones are referred toas key attributes
 ROWS = records = tuple
 DOMAINS = set of legal values that can be assigned to a database
 each Relation posseses its own Schema(structure including the name of relation its attributes their names and datatypes)
@@ -230,12 +231,28 @@ Domain Constraints
 Refrential Integrity Constraints (Referenced Primary/Foreign key columns must exist)
 
 
-
 ### DATATYPES
 Might vary depending on the Database
 few common are Strings - Numeric - Date and Time - Binary
+
 Numeric - **INT,TINYINT,BIGINT,FLOAT,REAL**
+
 Date and TIME - **DATE,TIME,DATETIME**
+
 Char and String - **CHAR,VARCHAR**
 
+Binary - **BINARY,VARBINARY**
 
+Character Large Object - Binary Large Object
+
+# Database Structures
+
+Logical Database Structure
+Cardinality of Relationships
+->One-to One
+->One-to-Many
+->Many-to-Many
+
+Physical Database Structure
+Uses Primary key and Foreign key Relationship
+**Multivalue Atributes should be avoided**
