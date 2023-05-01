@@ -191,5 +191,58 @@ VLAUES (value1d, value2d, value3d);
 ```
 
 ### Task 1
+```
+CREATE DATABASE bookshop;
+```
+
+```
+USE bookshop; 
+```
+
+```
+CREATE TABLE customers (customerID int, customerName varchar(50), customerAddress varchar(255));
+```
+
+```
+SHOW tables;
+```
+
+```
+INSERT INTO customers (customerID, customerName, customerAddress) VALUES (1, "Jack", "115 Old street Belfast");
+```
+
+```
+INSERT INTO customers(customerID, customerName, customerAddress) VALUES (2, "James", "24 Carlson Rd London") ;
+```
+
+```
+SELECT * FROM customers;
+```
+
+### Selecting data from a table
+To get a single attribute
+```
+SELECT COLUMN_NAME FROM TABLE_NAME;
+```
+To get a multiple attributes
+```
+SELECT COLUMN_NAME1,COLUMN_NAME2 FROM TABLE_NAME;
+```
+
+To get all attributes
+```
+SELECT * FROM TABLE_NAME;
+```
+
+#### INSERT INTO SELECT
+```
+INSERT INTO TARGET_TABLE (TARGET_COLUMN_NAME)
+SELECT SOURCE_COLUMN_NAME
+FROM SOURCE_TABLE
+```
+
+#### SELECT tasks 
+Most used select tasks include math calculations, date and time queries, concatenation functions.
+
 
 
