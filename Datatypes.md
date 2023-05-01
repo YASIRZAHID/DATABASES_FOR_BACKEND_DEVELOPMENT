@@ -1,6 +1,6 @@
 This article inludes 
 Datatypes
-Item Navigation
+Item Navigation/Editing
 
 # Datatype
 Tells Dtabase hoe to interpret the value of the column
@@ -148,7 +148,7 @@ CREATE DATABSE DATABASE_NAME;
 DROP DATABASE DATABSE_NAME;
 ```
 
-## Creating/Deleting a table
+## Creating/Editing/Deleting a table
 
 ### Creating a Table
 
@@ -240,9 +240,69 @@ INSERT INTO TARGET_TABLE (TARGET_COLUMN_NAME)
 SELECT SOURCE_COLUMN_NAME
 FROM SOURCE_TABLE
 ```
+##### TASK 1
 
+```
+CREATE DATABASE football_club
+```
+
+```
+USE football_club; 
+```
+
+```
+CREATE TABLE players (playerID int, playerName varchar(50), age int);
+```
+
+```
+CREATE TABLE games(gameID INT, gameDate DATE, score INT);
+```
+
+```
+SHOW tables;
+```
 #### SELECT tasks 
 Most used select tasks include math calculations, date and time queries, concatenation functions.
 
+### Updating data in the table
+Here we are updating the column1 and column2 values
+```
+UPDATE TABLE_NAME
+SET COLUMN_NAME1 = "VALUE1" ,COLUMN_NAME2 = "VALUE2"
+WHERE PRIMARY_KEY = VALUE;
+```
 
+If we have to change values for multiple students for multiple columns then
+```
+UPDATE TABLE_NAME here we changed where to include all column names with similar column value
+SET COLUMN_NAME1 = "VALUE1" ,COLUMN_NAME2 = "VALUE2"
+WHERE COLUMN_NAME = VALUE;
+```
+
+### DELETING DATA FROM TABLE
+Deletion of selective records 
+```
+DELETE FROM TABLE_NAME
+WHERE COLUMN_NAME='VALUE'
+```
+Deletion of all records
+```
+DELETE FROM TABLE_NAME;
+```
+
+```
+TRUNCATE TABLE customers;
+```
+
+```
+INSERT INTO customers (customerID, customerName, customerAddress) VALUES (1, "Jack", "115 Old street Belfast"),(2, 'James', '24 Carlson Rd London'),(4, 'Maria', '5 Fredrik Rd, Bedford'),(5, 'Jade', '10 Copland Ave Portsmouth '),(6, 'Yasmine', '15 Fredrik Rd, Bedford'),(3, 'Jimmy', '110 Copland Ave Portsmouth');
+```
+
+```
+DELETE FROM customers WHERE customerID = 3;
+```
+
+```
+SELECT * FROM customers;
+```
 
