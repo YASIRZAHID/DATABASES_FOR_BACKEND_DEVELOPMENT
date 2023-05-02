@@ -79,13 +79,25 @@ Select * FROM table_name ORDER BY column_name1, column_name2 ASC|DESC;
 Used to filter data that satisfy a specific condition
 Mostly used with 
 -Comparison operator
--BETWEEN
+-Logical operators
+--BETWEEN
   Used to filter records between specific numeric, date, time  range.
--LIKE
+--LIKE
   Specify pattern within the search criteria.
--IN
+--IN
   Used to specify multiple possible values for column.
-  
+Others include 
+```
+ALL
+AND
+ANY
+EXISTS
+NOT
+OR 
+IS NULL
+UNIQUE
+```
+
 ```
 SELECT * FROM employee WHERE salary + allowance = 25000; 
 ```
