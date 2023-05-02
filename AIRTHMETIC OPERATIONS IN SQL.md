@@ -39,7 +39,7 @@ SELECT salary - tax FROM employee;
 =
 <
 >
->+
+>=
 <=
 <> - not equal to
 ```
@@ -56,4 +56,17 @@ SELECT * FROM employee WHERE employee_name = 'Yasir';
 Employees with salary not 24000
 ```
 SELECT *  FROM employee WHERE salary <> 24000; 
+```
+
+## Sorting and Filtering of Data
+
+### ORDER BY
+Used to sort data in ascendng / descending order
+For ascending order based on column name we can write
+```
+SELECT COLUMN_NAME1, COLUMN_NAME2, COLUMN_NAME3, COLUMN_NAME4 FROM TABLE_NAME ORDER BY COLUMN_NAME ASC;
+```
+For descending order based on column name we can write
+```
+SELECT COLUMN_NAME1, COLUMN_NAME2, COLUMN_NAME3, COLUMN_NAME4 FROM TABLE_NAME ORDER BY COLUMN_NAME DESC;
 ```
