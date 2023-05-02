@@ -16,8 +16,8 @@ Database Schema includes:
 3. Name and Datatypes
 
 Advantages of Schema
-a. Management - provides logical grouping for projects.
-b. Accessibility - Enables greater accessibility to objects.
-c. Security - offers a range of useful security features.
-d. Ownership - permits ownership transfers between users.
+1. Management - provides logical grouping for projects.
+2. Accessibility - Enables greater accessibility to objects.
+3. Security - offers a range of useful security features.
+4. Ownership - permits ownership transfers between users.
 
