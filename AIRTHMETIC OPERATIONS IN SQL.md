@@ -1,11 +1,13 @@
 This guide contains OPERATORS and SORTING?FILTERING methods
 # SQL OPERATORS
 ## Airthmatic operators
+```
 +
 -
 *
 /
 %
+```
 
 ### REAL LIFE EXAMPLES
 ```
@@ -33,12 +35,14 @@ SELECT salary - tax FROM employee;
 
 
 ## Comparison operators
+```
 =
 <
 >
 >+
 <=
 <> - not equal to
+```
 
 ### Examples
 Record of employee ID=1
