@@ -125,11 +125,39 @@ SELECT * FROM students WHERE country IN ('PAKISTAN','TURKEY');
 
 These can also be used in update and delete statements....
 
+### TASK 1
 
+```
+CREATE DATABASE Chinook;
+```
 
+```
+USE Chinook;
+```
 
+```
+CREATE TABLE Customer (CustomerId INT NOT NULL, FirstName VARCHAR(40) NOT NULL, LastName VARCHAR(20) NOT NULL, Company VARCHAR(80), Address VARCHAR(70), City VARCHAR(40), State VARCHAR(40), Country VARCHAR(40), PostalCode VARCHAR(10), Phone VARCHAR(24), Fax VARCHAR(24), Email VARCHAR(60) NOT NULL, SupportRepId INT, CONSTRAINT PK_Customer PRIMARY KEY (CustomerId));
+```
 
+```
+  INSERT INTO Customer (CustomerId, FirstName, LastName, Company, Address, City, State, Country, PostalCode, Phone, Fax, Email, SupportRepId) VALUES (1, 'Muhammad', 'Ali', 'Pakistan International Airlines', 'Jinnah International Airport', 'Karachi', 'Sindh', 'Pakistan', '75200', '+92 (21) 9903-3633', '+92 (21) 9903-3634', 'muhammad.ali@pia.com.pk', 3),(2, 'Yasir', 'Zahid', 'Pakistan State Oil', 'PSO House, Khayaban-e-Iqbal', 'Islamabad', 'Islamabad Capital Territory', 'Pakistan', '44000', '+92 (51) 111 111 PSO', '+92 (51) 920 1524', 'yasir.zahid@psopk.com', 4),(3, 'Fatima', 'Nawaz', 'National Bank of Pakistan', 'I.I. Chundrigar Road', 'Karachi', 'Sindh', 'Pakistan', '74000', '+92 (21) 99221100', '+92 (21) 99221111', 'fatima.nawaz@nbp.com.pk', 5),(4, 'Imran', 'Khan', 'Pakistan Tourism Development Corporation', 'Flashman's Hotel', 'Rawalpindi', 'Punjab', 'Pakistan', '46000', '+92 (51) 9272016', '+92 (51) 9272017', 'imran.khan@ptdc.com.pk', 3),(5, 'Saba', 'Haider', 'Mobilink Jazz', 'Mobilink House, 1- A, Kohistan Road, F-8 Markaz', 'Islamabad', 'Islamabad Capital Territory', 'Pakistan', '44000', '+92 (51) 111300300', '+92 (51) 2652960', 'saba.haider@mobilink.net', 5),(6, 'Ayesha', 'Javed', 'Telenor Pakistan', '345, Plot # 55، Huma Block', 'Lahore', 'Punjab', 'Pakistan', '54000', '+92 (42) 111 345 100', '+92 (42) 111 345 700', 'ayesha.javed@telenor.com.pk', 3);
+```
 
+```
+SELECT CustomerID, FirstName, LastName, City, State, Country FROM Customer;
+```
+
+```
+SELECT CustomerID, FirstName, LastName, City, State, Country FROM Customer ORDER BY FirstName;
+```
+
+```
+SELECT * FROM Customer WHERE Country = "Pakistan"; 
+```
+
+```
+SELECT * FROM Customer  WHERE Country = "Pakistan" ORDER BY FirstName; 
+```
 
 
 
