@@ -21,3 +21,24 @@ Advantages of Schema
 3. Security - offers a range of useful security features.
 4. Ownership - permits ownership transfers between users.
 
+## TYPES OF SCHEMA
+1. Conceptual/Logical Schema- Defines entities, attributes and relationships.
+2. Internal/Physical Schema- Defines the actual storage of data and access paths.
+3. External/View Schema- Defines diffrent user views.
+
+Creating a simple table
+```
+create table table_name(
+FIELD DATATYPE...,
+PRIMARY KEY (PRIMARY_KEY_FIELD),
+)
+```
+
+Here's another table linking to other tables primary key
+```
+create table table_name(
+FIELD DATATYPE...,
+PRIMARY KEY (PRIMARY_KEY_FIELD),
+FOREIGN KEY (FOREIGN_KEY_FIELD) REFRENCES OTHER_TABLE(FOREIGN_KEY_FIELD);
+)
+```
