@@ -159,5 +159,21 @@ SELECT * FROM Customer WHERE Country = "Pakistan";
 SELECT * FROM Customer  WHERE Country = "Pakistan" ORDER BY FirstName; 
 ```
 
+### SELECT DISTINCT CLAUSE
+Used to get Distinct values without any dupliates (making sure unique values are returned)
 
+GETTING ALL COUNTRIES ONCE
+```
+SELECT DISTINCT COUNTRY_NAME FROM STUDENT_TABLE;
+```
+
+FOR MULTIPLE COLUMNS IT WILL RETURN EACH UNIQUE COMBINATION (NULL IS ALSO CONSIDERED UNIQE)
+```
+SELECT DISTINCT COUNTRY_NAME,FACULTY FROM STUDENT_TABLE;
+```
+
+COUNTING DISTINCT COUNTRIES (we can also use AVG,MAX and other functions)
+```
+SELECT COUNT(DISTINCT country) FROM customers; 
+```
 
