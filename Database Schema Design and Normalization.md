@@ -185,3 +185,53 @@ CREATE TABLE order_menu_item(
 
 ); 
 ```
+## Table Relationships
+### ER(Entity Relationship) DIAGRAM
+Square (column) links to Diamond links to Square (destination column)
+Crow foot for one to many and many to one
+
+### Primary Key
+**Degree is the number of columns/attributes**
+**Cardinality is the number of records**
+**Candidate key is the one that is unique for each record**
+**Candidate key not selected as primary key becomes secondary key**
+
+### Foreign Key
+Create table 1
+```
+CREATE TABLE vehicle( vehicleID varchar(10), ownerID varchar(10), plateNumber varchar(10), phoneNumber INT);
+```
+Create table2
+```
+CREATE TABLE Owner(ownerID VARCHAR(10), ownerName VARCHAR(50), ownerdrerss  VARCHAR(255), PRIMARY KEY (ownerID));
+```
+Add foreign key in table 1
+```
+ALTER TABLE vehicle ADD FOREIGN KEY (ownerID) REFERENCES owner (ownerID);
+```
+### Finding Entities
+**Atributes can be Derived, Multi-valued or Key**
+
+# Database Normalization
+Process of structuring tables that minimizes challenges in batabase systems by reducing
+**Data duplcation, avoiding data modifcation implications and helping to simplify data queries from database**
+Multipurpose tables cause problems some of them being **Insert anomally, Update Anomally,Deletion Anomally **
+
+## Problems
+
+### Insert Anomally
+When one of the fields is not yet available however required to fill the table.
+
+### Update Anomally
+One update requires further updates in one or multiple other other columns.
+
+### Deletion Anomally
+Deletion of a record results in deletion of some other necessary/required data.
+
+## Solution
+Break the multipupose into multiple single purpose tables.
+### First Normal Form 1NF
+Enforces data atomicity and eliminates unnecessary repeating groups of data in database tables.
+**Data Atomicity means that there can only be one single instance value per column field(one value per field) this reduces data redundancy and in accuracy**
+
+
