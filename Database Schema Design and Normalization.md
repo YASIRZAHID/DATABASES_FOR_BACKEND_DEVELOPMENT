@@ -230,8 +230,26 @@ Deletion of a record results in deletion of some other necessary/required data.
 
 ## Solution
 Break the multipupose into multiple single purpose tables.
+1. Aim for best possible database.
+2. Make sure you have the proper structure.
+3. Reduce the duplication.
+4. Allow for accurate data analysis and retrieval.
+
 ### First Normal Form 1NF
 Enforces data atomicity and eliminates unnecessary repeating groups of data in database tables.
-**Data Atomicity means that there can only be one single instance value per column field(one value per field) this reduces data redundancy and in accuracy**
+**Data Atomicity means that there can only be one single instance value per column field(one value per field) this reduces data redundancy and inaccuracy.**
+1. Cater multivalued fields.
+2. Create new tables to contain the repeating data.
+3.  Make sure new tables are linked
 
+### Second Normal Form 2NF
+**Functional dependency is the relation ship between two attributes in the table**
+Partial Dependency occurs when a non-primary key attribute is functionally dependent on part of a composite key.
+**Partial dependency is when the non key values are not dependent on the all the keys that makeup composite key but one or not all of them this violates 2NF rule**
+
+Break the table in entities (number of purposes the table serves)
+
+### Third Normal Form 3NF
+Resolves the issue of repetitive data
+**Transitive dependency means non key attribute can  ot be functionally dependent on another non key attribute**
 
