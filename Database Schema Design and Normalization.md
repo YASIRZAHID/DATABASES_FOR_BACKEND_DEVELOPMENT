@@ -243,6 +243,7 @@ Enforces data atomicity and eliminates unnecessary repeating groups of data in d
 3.  Make sure new tables are linked
 
 ### Second Normal Form 2NF
+When fully functionally dependent.
 **Functional dependency is the relation ship between two attributes in the table**
 Partial Dependency occurs when a non-primary key attribute is functionally dependent on part of a composite key.
 **Partial dependency is when the non key values are not dependent on the all the keys that makeup composite key but one or not all of them this violates 2NF rule**
